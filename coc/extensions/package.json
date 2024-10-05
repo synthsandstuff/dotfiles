@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "coc-clangd": ">=0.31.0",
+    "coc-json": ">=1.9.2",
+    "coc-cmake": ">=0.2.2",
+    "coc-html": ">=1.8.0",
+    "coc-sh": ">=1.2.4"
+  },
+  "lastUpdate": 1727796875465
+}

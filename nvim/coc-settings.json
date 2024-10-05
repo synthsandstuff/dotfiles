@@ -1,0 +1,13 @@
+{
+"coc.preferences.semanticTokensHighlights": true,
+"semanticTokens.enable": true,
+"semanticTokens.filetypes": ["*"],
+
+"languageserver": {
+  "efm": {
+      "command": "efm-langserver",
+      "args": [],
+      "filetypes": ["vim", "eruby", "markdown", "yaml"]
+    }
+  },
+}
