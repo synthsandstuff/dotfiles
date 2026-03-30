@@ -1,13 +1,13 @@
 {
-"coc.preferences.semanticTokensHighlights": true,
 "semanticTokens.enable": true,
-"semanticTokens.filetypes": ["*"],
+"prettier.enable": true,
+"prettier.configPath": "~/.prettierrc",
 
 "languageserver": {
   "efm": {
       "command": "efm-langserver",
       "args": [],
       "filetypes": ["vim", "eruby", "markdown", "yaml"]
-    }
-  },
+  }
+}
 }

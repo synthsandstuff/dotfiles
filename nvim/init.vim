@@ -1,9 +1,16 @@
 call plug#begin('~/.local/share/nvim/site/plugged')
 
+Plug 'dart-lang/dart-vim-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'theacodes/witchhazel'
+Plug 'fatih/vim-go'
 
 call plug#end()
+
+"let g:go_def_mode='gopls'
+"let g:go_info_mode='gopls'
+
+let g:go_gopls_enabled = 0
 
 set number
 set relativenumber
@@ -14,6 +21,13 @@ colorscheme witchhazel-hypercolor
 let g:coc_default_semantic_highlight_groups = 1
 
 set updatetime=300
+
+set mouse=
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
@@ -86,3 +100,6 @@ augroup end
 
 " Add `:Format` command to format current buffer
 command! -nargs=0 Format :call CocActionAsync('format')
+
+" Add :Prettier command to format
+command! -nargs=0 Prettier :call CocActionAsync('runCommand', 'prettier.formatFile')

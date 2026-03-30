@@ -4,7 +4,12 @@
     "coc-json": ">=1.9.2",
     "coc-cmake": ">=0.2.2",
     "coc-html": ">=1.8.0",
-    "coc-sh": ">=1.2.4"
+    "coc-sh": ">=1.2.4",
+    "coc-pairs": ">=1.4.2",
+    "coc-flutter": ">=1.9.10",
+    "coc-prettier": ">=11.0.1",
+    "coc-tsserver": ">=2.3.1",
+    "coc-nix": ">=0.0.2"
   },
-  "lastUpdate": 1727796875465
+  "lastUpdate": 1773654152044
 }
