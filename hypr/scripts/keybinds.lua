@@ -7,26 +7,26 @@ hl.bind("SUPER + S", hl.dsp.exec_cmd("spotify"))
 hl.bind("SUPER + M", hl.dsp.exec_cmd("hyprshutdown"))
 
 -- Window Management
-hl.bind("SUPER + F11", hl.dsp.fullscreen())
+hl.bind("SUPER + F11", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind("SUPER + Q", hl.dsp.window.close())
-hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({direction = l}))
-hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({direction = r}))
-hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({direction = u}))
-hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({direction = d}))
+hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({direction = "left"}))
+hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({direction = "right"}))
+hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({direction = "up"}))
+hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({direction = "down"}))
 
 -- Focus Movement
-hl.bind("SUPER + left", hl.dsp.focus({direction = l}))
-hl.bind("SUPER + right", hl.dsp.focus({direction = r}))
-hl.bind("SUPER + up", hl.dsp.focus({direction = u}))
-hl.bind("SUPER + down", hl.dsp.focus({direction = d}))
+hl.bind("SUPER + left", hl.dsp.focus({direction = "left"}))
+hl.bind("SUPER + right", hl.dsp.focus({direction = "right"}))
+hl.bind("SUPER + up", hl.dsp.focus({direction = "up"}))
+hl.bind("SUPER + down", hl.dsp.focus({direction = "down"}))
 
 -- Workspaces
-hl.bind("SUPER + N", hl.dsp.focus({workspace = m+1}))
-hl.bind("SUPER + P", hl.dsp.focus({workspace = m-1}))
-hl.bind("SUPER + SHIFT + N", hl.dsp.window.move({workspace = m+1}))
-hl.bind("SUPER + SHIFT + P", hl.dsp.window.move({workspace = m-1}))
+hl.bind("SUPER + N", hl.dsp.focus({workspace = "m+1"}))
+hl.bind("SUPER + P", hl.dsp.focus({workspace = "m-1"}))
+hl.bind("SUPER + SHIFT + N", hl.dsp.window.move({workspace = "m+1"}))
+hl.bind("SUPER + SHIFT + P", hl.dsp.window.move({workspace = "m-1"}))
 hl.bind("SUPER + U", hl.dsp.workspace.toggle_special(special))
-hl.bind("SUPER + SHIFT + U", hl.dsp.window.move({workspace = special}))
+hl.bind("SUPER + SHIFT + U", hl.dsp.window.move({workspace = "special"}))
 
 -- Extra
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
