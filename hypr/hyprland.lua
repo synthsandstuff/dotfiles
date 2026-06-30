@@ -1,7 +1,10 @@
 hl.on("hyprland.start", function ()
 	hl.exec_cmd("hyprpaper")
 	hl.exec_cmd("waybar")
-	hl.exec_cmd("alacritty")
+	hl.exec_cmd("vicinae server")
+	hl.exec_cmd("[workspace 1 silent] firefox")
+	hl.exec_cmd("[workspace 2 silent] alacritty")
+	hl.exec_cmd("[workspace 3 silent] vesktop")
 end)
 
 require("scripts/general")

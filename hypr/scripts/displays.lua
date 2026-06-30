@@ -4,9 +4,6 @@ hl.monitor({
 	position = "0x0",
 	scale = 1.25,
 	bitdepth = 10,
-	cm = "hdr",
-	sdrbrightness = 1.3,
-	sdrsaturation = 1.3,
 })
 
 hl.monitor({
