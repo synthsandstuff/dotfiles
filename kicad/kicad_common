@@ -1,0 +1,16 @@
+UseIconsInMenus=0
+IconScale=0
+MousewheelPAN=0
+ZoomNoCenter=0
+AutoPAN=1
+OpenGLAntialiasingMode=0
+CairoAntialiasingMode=0
+WorkingDir=/private/var/folders/nl/8x_y92j90653gh9d6q9sd1yc0000gn/T/AppTranslocation/199EA9CB-3911-4FC9-AEE9-1E9EB1506552/d
+ShowEnvVarWarningDialog=1
+[EnvironmentVariables]
+KICAD_SYMBOL_DIR=/Library/Application Support/kicad/library
+KICAD_TEMPLATE_DIR=/Library/Application Support/kicad/template
+KICAD_USER_TEMPLATE_DIR=/Users/davideatch/Documents/kicad/template
+KIGITHUB=https://github.com/KiCad
+KISYS3DMOD=/Library/Application Support/kicad/modules/packages3d/
+KISYSMOD=/Library/Application Support/kicad/modules

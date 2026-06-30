@@ -1,0 +1,284 @@
+{
+    "packages": [
+        {
+            "current_version": "2022.11.18",
+            "install_timestamp": 1699102056,
+            "package": {
+                "author": {
+                    "contact": {
+                        "web": "https://thea.codes"
+                    },
+                    "name": "Alethea Katherine Flowers"
+                },
+                "description": "Dark theme designed by @theacodes",
+                "description_full": "Dark theme designed by @theacodes",
+                "identifier": "codes.thea.witchhazel",
+                "license": "Apache-2.0",
+                "maintainer": {
+                    "contact": {
+                        "web": "https://thea.codes"
+                    },
+                    "name": "Alethea Katherine Flowers"
+                },
+                "name": "Witch Hazel",
+                "resources": {
+                    "Github": "https://github.com/theacodes/witchhazel",
+                    "Website": "https://witchhazel.thea.codes"
+                },
+                "type": "colortheme",
+                "versions": [
+                    {
+                        "download_sha256": "bac5022d0b7c83b865a446eeb77466dc34f7c0a47035bb653ef5dbe414105721",
+                        "download_size": 7281,
+                        "download_url": "https://github.com/theacodes/witchhazel/releases/download/2022.11.18/kicad-witchhazel.zip",
+                        "install_size": 13890,
+                        "kicad_version": "6.0",
+                        "status": "stable",
+                        "version": "2022.11.18"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "2023.10.11",
+            "install_timestamp": 1699102055,
+            "package": {
+                "author": {
+                    "contact": {
+                        "github": "https://github.com/Steffen-W"
+                    },
+                    "name": "Steffen Wittemeier"
+                },
+                "description": "Plugin to analyze the wires in the PCB editor.",
+                "description_full": "Plugin to analyze the wires in the PCB editor. To use the plugin, two points must be marked on the board. This is best two pads that are connected with a wire. The tool then determines the DC resistance between the two points. A parasitic inductance wired also estimated. In future versions, the parasitic capacitance to the ground plane will be determined.",
+                "identifier": "com.github.Steffen-W.KiCad-Parasitics",
+                "license": "GPL-3.0",
+                "maintainer": {
+                    "contact": {
+                        "github": "https://github.com/Steffen-W"
+                    },
+                    "name": "Steffen Wittemeier"
+                },
+                "name": "Parasitics",
+                "resources": {
+                    "homepage": "https://github.com/Steffen-W/KiCad-Parasitics"
+                },
+                "tags": [
+                    "postlayoutsimulation",
+                    "inductor",
+                    "resistor",
+                    "capacitor"
+                ],
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "f34b73264e6fb272c8633554b906a0a8d9cdf7ccc1f46bcadba86a6fba8b0c84",
+                        "download_size": 22933,
+                        "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.10.27/KiCad-Parasitics.zip",
+                        "install_size": 66884,
+                        "kicad_version": "7.00",
+                        "status": "stable",
+                        "version": "2023.10.27"
+                    },
+                    {
+                        "download_sha256": "c69fc13633bc22587fa8848c832e60fc653b193c161d2df1ceb4fe38bbcd3838",
+                        "download_size": 22604,
+                        "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.10.11/KiCad-Parasitics.zip",
+                        "install_size": 67026,
+                        "kicad_version": "7.00",
+                        "status": "stable",
+                        "version": "2023.10.11"
+                    },
+                    {
+                        "download_sha256": "3b9060b3bddddd4d25849bf57cfeb86a5d1c41badd793e5e0c08617a3fd4e68f",
+                        "download_size": 22257,
+                        "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.09.29/KiCad-Parasitics.zip",
+                        "install_size": 65128,
+                        "kicad_version": "7.00",
+                        "status": "stable",
+                        "version": "2023.09.29"
+                    },
+                    {
+                        "download_sha256": "a1e147532caf614aeec4c93466ced794c2dfef9f75dc058fb77d12b7a5835e6b",
+                        "download_size": 46452,
+                        "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.09.27/KiCad-Parasitics.zip",
+                        "install_size": 115988,
+                        "kicad_version": "7.00",
+                        "status": "stable",
+                        "version": "2023.09.27"
+                    },
+                    {
+                        "download_sha256": "523d77af16ef5fe976daf4bb9fc61fcf2a3d3782e65dd6c0c4f5d33bdac26842",
+                        "download_size": 122426,
+                        "download_url": "https://github.com/Steffen-W/KiCad-Parasitics/releases/download/2023.09.20/KiCad-Parasitics.zip",
+                        "install_size": 613633,
+                        "kicad_version": "7.00",
+                        "status": "stable",
+                        "version": "2023.09.20"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "3.0.0",
+            "install_timestamp": 1695542231,
+            "package": {
+                "author": {
+                    "contact": {
+                        "github": "https://github.com/bennymeg"
+                    },
+                    "name": "Benny Megidish"
+                },
+                "description": "JLC PCB fabrication toolkit\nAutomate PCB fabrication process in conjunction with JLC PCB",
+                "description_full": "Toolkit for automating PCB fabrication process with KiCad and JLC PCB. \n\n OPTIONS: \n• Include Component Part Number in Production Files \n Add an 'MPN' field with the LCSC component part number to the footprint component options.  \n\n• Ignore Footprint in Production Files \n Select 'Exclude from position files' or 'Exclude from BOM' in the footprint properties fabrication attributes in order to ignore the footprint from the relevant file.",
+                "identifier": "com.github.bennymeg.JLC-Plugin-for-KiCad",
+                "license": "Apache-2.0",
+                "maintainer": {
+                    "contact": {
+                        "github": "https://github.com/bennymeg"
+                    },
+                    "name": "Benny Megidish"
+                },
+                "name": "Fabrication Toolkit",
+                "resources": {
+                    "homepage": "https://github.com/bennymeg/JLC-Plugin-for-KiCad"
+                },
+                "tags": [
+                    "jlc",
+                    "production",
+                    "fabrication",
+                    "toolkit"
+                ],
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "70d15ba812e59e0e26b5a4a45822e4f29e134f257b91bfa0009c468a98cb5abf",
+                        "download_size": 16983,
+                        "download_url": "https://github.com/bennymeg/JLC-Plugin-for-KiCad/releases/download/4.1.0/JLC-Plugin-for-KiCad-4.1.0.zip",
+                        "install_size": 41101,
+                        "kicad_version": "6.00",
+                        "status": "stable",
+                        "version": "4.1.0"
+                    },
+                    {
+                        "download_sha256": "f015affbeacef6217c0da80f53ecf4d143c304d795bc6f5913a9844425e300e3",
+                        "download_size": 14636,
+                        "download_url": "https://github.com/bennymeg/JLC-Plugin-for-KiCad/releases/download/3.0.0/JLC-Plugin-for-KiCad-3.0.0.zip",
+                        "install_size": 31053,
+                        "kicad_version": "6.00",
+                        "status": "stable",
+                        "version": "3.0.0"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        },
+        {
+            "current_version": "1.5",
+            "install_timestamp": 1695542231,
+            "package": {
+                "author": {
+                    "contact": {
+                        "web": "https://mitxela.com"
+                    },
+                    "name": "mitxela"
+                },
+                "description": "A subdivision- and/or native arc-based track rounding plugin.",
+                "description_full": "Algorithmically smooth tracks in a predictable manner. Useful for flex PCBs, or just because it looks cool.",
+                "identifier": "com.github.mitxela.kicad-round-tracks",
+                "license": "Apache-2.0",
+                "name": "Round Tracks",
+                "resources": {
+                    "homepage": "https://github.com/mitxela/kicad-round-tracks"
+                },
+                "type": "plugin",
+                "versions": [
+                    {
+                        "download_sha256": "5f0e15a8e12db58b91c70154cbfcc4d293309af2f1aad503d1560e7b375800f3",
+                        "download_size": 15881,
+                        "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.5/kicad-round-tracks-1.5.zip",
+                        "install_size": 33698,
+                        "kicad_version": "7.0.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.5"
+                    },
+                    {
+                        "download_sha256": "4466d0a379c25773c07bac3a76815745bbae40576eb3b3fb6eeec22812788547",
+                        "download_size": 15878,
+                        "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.4/kicad-round-tracks-1.4.zip",
+                        "install_size": 33698,
+                        "kicad_version": "7.0.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.4"
+                    },
+                    {
+                        "download_sha256": "e4d1087cf726018840f5f75291aae55de8cece49e2bada30be1e19ab6b474c40",
+                        "download_size": 15433,
+                        "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.2/kicad-round-tracks-1.2.zip",
+                        "install_size": 32694,
+                        "kicad_version": "6.0",
+                        "kicad_version_max": "6.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.2"
+                    },
+                    {
+                        "download_sha256": "3ac65b3be5f1acd3e56583846d49b19ff425ed0a03154c775f4d655cd30fbdcc",
+                        "download_size": 14742,
+                        "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.1/kicad-round-tracks-1.1.zip",
+                        "install_size": 29430,
+                        "kicad_version": "6.0",
+                        "kicad_version_max": "6.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.1"
+                    },
+                    {
+                        "download_sha256": "0ee531e5f324e22af07df691d529848e36f9960c2e0cf9ce8d4da3c2bcf0cc21",
+                        "download_size": 14632,
+                        "download_url": "https://github.com/mitxela/kicad-round-tracks/releases/download/1.0/kicad-round-tracks-1.0.zip",
+                        "install_size": 29167,
+                        "kicad_version": "6.0",
+                        "kicad_version_max": "6.1",
+                        "platforms": [
+                            "linux",
+                            "macos",
+                            "windows"
+                        ],
+                        "status": "stable",
+                        "version": "1.0"
+                    }
+                ]
+            },
+            "pinned": false,
+            "repository_id": "46f88614eade3439",
+            "repository_name": "KiCad official repository"
+        }
+    ]
+}
