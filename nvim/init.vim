@@ -13,11 +13,16 @@ colorscheme witchhazel-hypercolor
 
 let g:coc_default_semantic_highlight_groups = 1
 
-"let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pairs', 'coc-html', 'coc-cmake', 'coc-cmake', 'coc-clangd', 'coc-css', 'coc-flutter', 'coc-lua', 'coc-nix']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pairs', 'coc-html', 'coc-cmake', 'coc-cmake', 'coc-clangd', 'coc-css', 'coc-flutter', 'coc-lua', 'coc-nix']
 
 set updatetime=300
-set shiftwidth=4
+
+set mouse=
+
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
