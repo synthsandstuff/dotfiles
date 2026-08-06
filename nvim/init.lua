@@ -1,4 +1,4 @@
-require("config.options")
+require("config.general")
 require("config.keymap")
 require("config.lsp")
 require("config.colours")

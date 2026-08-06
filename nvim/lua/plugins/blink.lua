@@ -8,6 +8,7 @@ cmp.setup({
 	appearance = {
 		nerd_font_variant = "normal",
 	},
+  fuzzy = {implementation = "lua"},
 	sources = {
 		default = {
 			"lsp",
