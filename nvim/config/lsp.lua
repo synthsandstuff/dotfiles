@@ -3,8 +3,11 @@ vim.lsp.config("*", {
 })
 
 vim.lsp.enable({
-  "lua_ls",
-  "clangd"
+  "clangd",
+  "dart",
+  "kotlin",
+  "lua",
+  "swift"
 })
 
 vim.diagnostic.config({
@@ -16,7 +19,7 @@ vim.diagnostic.config({
     border = "rounded",
     source = true,
   },
-  signed = {
+  signs = {
     text = {
       [vim.diagnostic.severity.ERROR] = "󰅚 ",
       [vim.diagnostic.severity.WARN] = "󰀪 ",
@@ -43,10 +46,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 
-    if client:supports_method('textDocument/code_action') then
-      vim.keymap({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, opts)
-    end
-      
+    vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, opts)
+
     if client:supports_method('textDocument/implementation') then
       vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
     end
@@ -68,9 +69,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 
     if client:supports_method('textDocument/formatting') then
-      local format_opts = {bufnr = ev.bug, id = client.id, timeout_ms = 1000}
-      vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, format_opts)
-      vim.api.nvim_create_user_command('Format', vim.lsp.buf.format(format_opts))
+      local format_opts = {bufnr = ev.buf, id = client.id, timeout_ms = 1000}
+      vim.keymap.set("n", "<leader>F", function() vim.lsp.buf.format(format_opts) end, opts)
+      vim.api.nvim_create_user_command('Format', function() vim.lsp.buf.format(format_opts) end, {})
     end
   end
 })
