@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "witchhazel": {
+      "rev": "e297207c4cf196d4049a1e7920a24a1b8e6a0541",
+      "src": "https://github.com/theacodes/witchhazel"
+    }
+  }
+}
