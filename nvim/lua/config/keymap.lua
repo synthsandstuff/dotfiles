@@ -9,3 +9,8 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>")
 vim.keymap.set("n", "<leader>e", ":Ex<CR>")
 
 vim.keymap.set("v", "<", "<gv")
+
+vim.keymap.set({ 'i', 'n' }, '<leader>a', function()
+  vim.o.autocomplete = not vim.o.autocomplete
+  vim.notify('Autocomplete ' .. (vim.o.autocomplete and 'on' or 'off'))
+end)

@@ -3,12 +3,17 @@ vim.lsp.config("*", {
 })
 
 vim.lsp.enable({
-  "clangd",
+  "ccpp",
   "dart",
   "kotlin",
   "lua",
   "swift"
 })
+
+vim.o.autocomplete = true
+vim.o.complete = 'o,.'
+
+vim.opt.completeopt = { "menuone", "noselect", "noinsert", "popup"}
 
 vim.diagnostic.config({
   virtual_lines = true,
@@ -34,19 +39,18 @@ vim.diagnostic.config({
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
-  group = vim.api.nvim_create_augroup('UserLspConfig', {clear = true}),
+  group = vim.api.nvim_create_augroup('UserLspConfig', { clear = true }),
 
   callback = function(ev)
-
     local client = assert(vim.lsp.get_client_by_id(ev.data.client_id))
 
-    local opts = { silent = true, buffer = ev.buf}
+    local opts = { silent = true, buffer = ev.buf }
 
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
     vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 
-    vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
     if client:supports_method('textDocument/implementation') then
       vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
@@ -65,11 +69,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 
     if client:supports_method('textDocument/completion') then
-      vim.lsp.completion.enable(true, client.id, ev.buf, {autotrigger = true})
+      vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
     end
 
     if client:supports_method('textDocument/formatting') then
-      local format_opts = {bufnr = ev.buf, id = client.id, timeout_ms = 1000}
+      local format_opts = { bufnr = ev.buf, id = client.id, timeout_ms = 1000 }
       vim.keymap.set("n", "<leader>F", function() vim.lsp.buf.format(format_opts) end, opts)
       vim.api.nvim_create_user_command('Format', function() vim.lsp.buf.format(format_opts) end, {})
     end
